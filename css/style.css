@@ -1,0 +1,58 @@
+html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background: #FFFFFF;
+    font: 13px/14px verdana, sans-serif;
+}
+
+a:link, a:visited {
+    font: 13px/14px verdana, sans-serif;
+    color: #999999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444444;
+}
+
+table {
+    font: 13px/14px verdana, sans-serif;  
+}
+
+tr.unfilled {
+    text-decoration: line-through; 
+    color:#FF0000;
+}
+
+#main {
+    margin: 25px auto 0 auto;
+    width: 400px;
+}
+
+#main textarea {
+    width: 400px;
+    height: 100px;
+    background: #CCCCCC;
+}
+
+#main .small {
+    font: 10px/12px verdana, sans-serif;
+}
+
+#main .red {
+    color: #b83d3d;
+}
+
+#main input#submit {
+    padding: 2px 2px 2px 2px;
+    font: 11px/12px verdana, sans-serif; 
+}
+
+.even {
+    background-color: #CCC;
+}
