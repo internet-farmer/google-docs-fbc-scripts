@@ -33,7 +33,7 @@ if (isset($_POST['Submit'])) {
         <div id="main">
             Starting in the GoogleDocs Spreadsheet, click:
             <p/>
-            <i>'File > Downlaod As > CSV (current sheet)'</i>  
+            <i>'File > Downlaod As > Comma-separated values (.csv, current sheet)'</i>  
             <p/>
             This will save the sheet to your computer.  Open a new tab or window in your broswer.
             <p/>
