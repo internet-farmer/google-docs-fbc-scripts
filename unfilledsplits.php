@@ -18,6 +18,12 @@ function is_unfilled_split($a) {
     <body>
         <a href="./">&laquo; back to main</a><p/>
         <?php
+
+        if (!file_exists(Config::DATAFILE)) {
+            echo 'ERROR: Data file does not exist';
+            return;
+        };
+
         $handle = fopen(Config::DATAFILE, "r");
         fgetcsv($handle, 1000, ","); // skip header
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {

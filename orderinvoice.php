@@ -23,6 +23,12 @@ function get_amt_unit($a) {
             <?
             $cnt = 0;
             $klass = '';
+
+            if (!file_exists(Config::DATAFILE)) {
+                echo 'ERROR: Data file does not exist';
+                return;
+            };
+
             $handle = fopen(Config::DATAFILE, "r");
             fgetcsv($handle, 1000, ","); // skip the header
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {

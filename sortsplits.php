@@ -24,6 +24,11 @@ function get_amt_per_member($a, $h) {
     <body>
         <a href="./">&laquo; back to main</a><p/>
         <?
+        if (!file_exists(Config::DATAFILE)) {
+            echo 'ERROR: Data file does not exist';
+            return;
+        };
+
         $handle = fopen(Config::DATAFILE, "r");
         $headers = fgetcsv($handle, 1000, ",");
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {

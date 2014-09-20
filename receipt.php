@@ -33,6 +33,12 @@ function get_products($a, $x) {
 
 function receipt() {
     $order_array = array();
+
+    if (!file_exists(Config::DATAFILE)) {
+        echo 'ERROR: Data file does not exist';
+        return;
+    };
+
     $handle = fopen(Config::DATAFILE, "r");
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         array_push($order_array, $data);
